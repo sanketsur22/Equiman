@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-color: rgb(168, 110, 56);
+}
+
+body {
+  background-color: white;
+  color: black;
+}
+
