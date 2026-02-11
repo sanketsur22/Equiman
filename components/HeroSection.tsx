@@ -16,7 +16,7 @@ export default function HeroSection() {
     }, 2500);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [rotatingPhrases.length]);
 
   return (
     <section 
