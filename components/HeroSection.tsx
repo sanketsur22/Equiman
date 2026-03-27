@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 export default function HeroSection() {
   const rotatingPhrases = [
     "Backtested Trading Rules",
-    "Clarity, Confidence and Consistency",
+    "Confidence and Consistency",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -64,7 +64,9 @@ export default function HeroSection() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a
-            href="#services"
+            href="https://calendly.com/equiman808/equimanstrategycall"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-8 py-3 rounded-full font-semibold text-sm md:text-base text-white shadow-[0_18px_45px_rgba(148,91,40,0.6)] hover:shadow-[0_26px_65px_rgba(148,91,40,0.75)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-150"
             style={{ backgroundImage: "linear-gradient(to right, rgb(168, 110, 56), #fbbf24)" }}
           >

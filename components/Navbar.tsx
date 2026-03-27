@@ -48,7 +48,9 @@ export default function Navbar() {
                 FAQ
               </Link>
               <Link 
-                href="#contact" 
+                href="https://calendly.com/equiman808/equimanstrategycall"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-4 py-1.5 md:px-5 md:py-2 rounded-full text-white text-xs md:text-sm font-semibold shadow-[0_12px_30px_rgba(148,91,40,0.5)] hover:shadow-[0_18px_45px_rgba(148,91,40,0.65)] hover:-translate-y-[1px] active:translate-y-0 transition-all duration-150"
                 style={{ backgroundColor: "rgb(168, 110, 56)" }}
               >
@@ -123,7 +125,9 @@ export default function Navbar() {
               FAQ
             </Link>
             <Link
-              href="#contact"
+              href="https://calendly.com/equiman808/equimanstrategycall"
+              target="_blank"
+              rel="noopener noreferrer"
               className="block px-3 py-2 rounded-full text-white font-semibold shadow-[0_12px_30px_rgba(148,91,40,0.5)] hover:shadow-[0_18px_45px_rgba(148,91,40,0.65)] transition-all text-sm mt-3 text-center"
               style={{ backgroundImage: "linear-gradient(to right, rgb(168, 110, 56), #fbbf24)" }}
               onClick={() => setIsMenuOpen(false)}
