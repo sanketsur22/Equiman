@@ -28,8 +28,8 @@ export default function Footer() {
         </div>
 
         {/* Footer columns */}
-        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          <div>
+        <div className="mt-12 flex flex-col gap-10 lg:flex-row lg:items-start lg:justify-between lg:gap-12 xl:gap-16">
+          <div className="max-w-md">
             <h4 className="text-lg font-semibold tracking-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-[rgb(168,110,56)] via-amber-400 to-[rgb(168,110,56)]">
                 Equiman
@@ -64,95 +64,81 @@ export default function Footer() {
             </div>
           </div>
 
-          <div>
-            <h5 className="text-sm font-semibold tracking-wide text-slate-900">Quick Links</h5>
-            <ul className="mt-4 space-y-2.5 text-sm">
-              <li>
-                <Link
-                  href="/"
-                  className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
-                >
-                  <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#about"
-                  className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
-                >
-                  <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
-                  About
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/fellowship"
-                  className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
-                >
-                  <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
-                  Fellowship
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#faq"
-                  className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
-                >
-                  <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
-                  FAQ
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <div className="grid grid-cols-1 min-[480px]:grid-cols-2 gap-8 sm:gap-12 lg:gap-14 xl:gap-20 lg:shrink-0">
+            <div className="min-w-[10rem]">
+              <h5 className="text-sm font-semibold tracking-wide text-slate-900">Quick Links</h5>
+              <ul className="mt-4 space-y-2.5 text-sm">
+                <li>
+                  <Link
+                    href="/"
+                    className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
+                    Home
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#about"
+                    className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
+                    About
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/fellowship"
+                    className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
+                    Fellowship
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#faq"
+                    className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
+                    FAQ
+                  </Link>
+                </li>
+              </ul>
+            </div>
 
-          <div>
-            <h5 className="text-sm font-semibold tracking-wide text-slate-900">Programs</h5>
-            <ul className="mt-4 space-y-2.5 text-sm">
-              <li>
-                <Link
-                  href="#services"
-                  className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
-                >
-                  <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#funnel"
-                  className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
-                >
-                  <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
-                  Equimantum System
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="#about"
-                  className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
-                >
-                  <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
-                  Owner&apos;s Approach
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          <div>
-            <h5 className="text-sm font-semibold tracking-wide text-slate-900">Contact</h5>
-            <p className="mt-4 text-sm text-slate-700 leading-relaxed">
-              Website:{" "}
-              <a
-                href="https://eqiman.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:opacity-80 transition"
-                style={{ color: brandColor }}
-              >
-                eqiman.in
-              </a>
-            </p>
+            <div className="min-w-[10rem]">
+              <h5 className="text-sm font-semibold tracking-wide text-slate-900">Programs</h5>
+              <ul className="mt-4 space-y-2.5 text-sm">
+                <li>
+                  <Link
+                    href="#services"
+                    className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
+                    Services
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#funnel"
+                    className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
+                    Equimantum System
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="#about"
+                    className="group text-slate-700 hover:text-slate-900 transition inline-flex items-center gap-2"
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)] opacity-0 group-hover:opacity-100 transition" />
+                    Owner&apos;s Approach
+                  </Link>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

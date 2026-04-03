@@ -66,5 +66,3 @@ npm start
 The website is configured for the domain: **eqiman.in**
 
 =======
-# Equiman
->>>>>>> 6c8b67b060dd4678bf112ef84ceaf31e42416c97

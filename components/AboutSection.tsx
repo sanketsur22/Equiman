@@ -14,7 +14,7 @@ export default function AboutSection() {
         <div className="text-center mb-12 sm:mb-16">
           <p className="inline-flex items-center gap-2 rounded-full border border-amber-200/70 bg-white/80 px-4 py-1 text-[10px] sm:text-xs font-medium uppercase tracking-[0.25em] text-amber-700/80 shadow-[0_10px_30px_rgba(148,91,40,0.18)]">
             <span className="h-1.5 w-1.5 rounded-full bg-[rgb(168,110,56)]" />
-            About the Owner
+            About the Founder
           </p>
           <h2 className="mt-4 text-3xl sm:text-4xl md:text-[2.6rem] font-semibold tracking-tight text-slate-900">
             The mind behind{" "}
